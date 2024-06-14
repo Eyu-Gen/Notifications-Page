@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryRed: hsl(1, 90%, 64%);
+    --primaryBlue: hsl(219, 85%, 26%);
+    --defaultColor: hsl(0, 0%, 100%);
+    --naturalVeryLightBlue: hsl(210, 60%, 98%);
+    --naturalLightBlue1: hsl(211, 68%, 94%);
+    --naturalLightBlue2: hsl(210, 6%, 75%);
+    --naturalGrayishBlue: hsl(219, 14%, 63%);
+    --naturalDarkGrayishBlue: hsl(219, 12%, 42%);
+    --naturalVeryDarkBlue: hsl(225, 21%, 11%);
+    --primaryFont: Plus Jakarta Sans;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--naturalVeryLightBlue);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageSection{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.highlight{
+    font-weight: 800;
+    text-decoration: none;
+    transition: color 0.2s linear;
+
+    &:hover{
+        cursor: pointer;
+        color: var(--primaryBlue);
+    }
+}
+
+.userHighlight{
+    color: var(--naturalVeryDarkBlue);
+}
+
+.postHighlight{
+    color: var(--naturalDarkGrayishBlue);
+}
+
+.groupHighlight{
+    color: var(--primaryBlue);
+}
+
+main{
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px var(--naturalLightBlue1);
+    width: 60%;
+    font-family: var(--primaryFont);
+    padding: 30px;
+    background-color: var(--defaultColor);
+
+    .container{
+        display: flex;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+
+        .imageContainer{
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .detailsContainer{
+            .upperPart{
+                .heading{
+                    font-weight: 600;
+                    color: var(--naturalGrayishBlue);
+                    margin-bottom: 5px;
+                }
+
+                .mark{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: var(--primaryRed);
+                    margin-left: 5px;
+                }
+            }
+
+            .lowerPart{
+                .time{
+                    color: var(--naturalLightBlue2);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+#container1{
+    justify-content: space-between;
+    background-color: white;
+
+    .headingWrapper{
+        display: flex;
+
+        .heading{
+            font-size: 30px;
+            font-weight: 700;
+            color: var(--naturalVeryDarkBlue);
+        }
+
+        #newNotificationNumber{
+            background-color: var(--primaryBlue);
+            color: var(--defaultColor);
+            padding: 3px 9px;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+    }
+
+    #markAll{
+        font-weight: 600;
+        color: var(--naturalDarkGrayishBlue);
+        transition: color 0.1s linear;
+
+        &:hover{
+            cursor: pointer;
+            color: var(--primaryBlue);
+        }
+    }
+}
+
+#container2,
+#container3,
+#container4{
+    background-color: var(--naturalLightBlue1);
+}
