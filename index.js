@@ -1,3 +1,4 @@
+//Remove the mark and notification number box...
 document.getElementById("markAll").addEventListener("click", function() {
     document.getElementById("newNotificationNumber").style.display = "none";
 

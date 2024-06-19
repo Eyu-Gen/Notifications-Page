@@ -92,13 +92,10 @@ main{
             width: 90%;
 
             .upperPart{
-                justify-content: start;
-
-                .heading{
-                    font-weight: 600;
-                    color: var(--naturalGrayishBlue);
-                    margin-bottom: 5px;
-                }
+                justify-content: left;
+                font-weight: 500;
+                color: var(--naturalGrayishBlue);
+                margin-bottom: 5px;
 
                 .mark{
                     width: 10px;
@@ -106,7 +103,9 @@ main{
                     border-radius: 50%;
                     background-color: var(--primaryRed);
                     margin-left: 5px;
+                    display: inline-block;
                 }
+                
             }
 
             .lowerPart{
@@ -187,6 +186,7 @@ main{
         margin-right: 10px;
         border: 1px solid var(--defaultColor);
         outline: 3px solid var(--defaultColor);
+        width: fit-content;
 
         .imageSection{
             width: 50px;
@@ -196,6 +196,7 @@ main{
         &:hover{
             outline-color: var(--naturalLightBlue1);
             border-radius: 10px;
+            cursor: pointer;
         }
     }
 }
@@ -215,27 +216,7 @@ main{
     #container1{
         .headingWrapper{
             .heading{
-                font-size: 15px;
-            }
-
-            #newNotificationNumber{
-                background-color: var(--primaryBlue);
-                color: var(--defaultColor);
-                padding: 1px 9px;
-                margin-left: 10px;
-                border-radius: 5px;
-            }
-        }
-
-        #markAll{
-            font-size: 10px;
-            font-weight: 600;
-            color: var(--naturalDarkGrayishBlue);
-            transition: color 0.1s linear;
-
-            &:hover{
-                cursor: pointer;
-                color: var(--primaryBlue);
+                font-size: 20px;
             }
         }
     }
